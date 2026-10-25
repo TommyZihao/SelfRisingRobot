@@ -1,0 +1,9 @@
+{
+  "name": "ppo_scratch_long",
+  "seed": 11,
+  "source": "ppo_scratch_randomized_seed11/final.zip (historical checkpoint; not bundled)",
+  "additional_steps": 1600000,
+  "algorithm": "PPO",
+  "diverse": true,
+  "randomize": true
+}

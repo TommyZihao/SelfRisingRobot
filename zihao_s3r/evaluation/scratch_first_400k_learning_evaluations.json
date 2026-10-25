@@ -1,0 +1,370 @@
+[
+  {
+    "timesteps": 100000,
+    "episodes": 40,
+    "successes": 1,
+    "invalid": 0,
+    "groups": {
+      "fixed/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "kick/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      }
+    },
+    "kick_actually_fallen": {
+      "successes": 1,
+      "n": 8
+    }
+  },
+  {
+    "timesteps": 200000,
+    "episodes": 40,
+    "successes": 2,
+    "invalid": 0,
+    "groups": {
+      "fixed/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "kick/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "oblique/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      }
+    },
+    "kick_actually_fallen": {
+      "successes": 1,
+      "n": 8
+    }
+  },
+  {
+    "timesteps": 300000,
+    "episodes": 40,
+    "successes": 2,
+    "invalid": 0,
+    "groups": {
+      "fixed/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "kick/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_neg": {
+        "successes": 1,
+        "n": 2
+      }
+    },
+    "kick_actually_fallen": {
+      "successes": 1,
+      "n": 8
+    }
+  },
+  {
+    "timesteps": 400000,
+    "episodes": 40,
+    "successes": 4,
+    "invalid": 0,
+    "groups": {
+      "fixed/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "fixed/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "fixed/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "lying/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "kick/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "kick/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/roll_pos": {
+        "successes": 1,
+        "n": 2
+      },
+      "oblique/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "oblique/pitch_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/roll_neg": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_pos": {
+        "successes": 0,
+        "n": 2
+      },
+      "inverted/pitch_neg": {
+        "successes": 1,
+        "n": 2
+      }
+    },
+    "kick_actually_fallen": {
+      "successes": 1,
+      "n": 8
+    }
+  }
+]

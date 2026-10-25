@@ -1,0 +1,103 @@
+{
+  "observation_order": [
+    "roll",
+    "pitch",
+    "lower_GPIO1_target",
+    "upper_GPIO2_target"
+  ],
+  "joint_limits_degrees": [
+    90,
+    120
+  ],
+  "control_period_seconds": 0.02,
+  "action_increment_radians": 0.08,
+  "nominal_servo_mass_g": 10,
+  "initial_comparison": {
+    "algorithms": [
+      "PPO",
+      "A2C"
+    ],
+    "configurations": 8,
+    "seeds": [
+      11,
+      29
+    ],
+    "timesteps_per_run": 400000
+  },
+  "screening": {
+    "start_seed": 1000000,
+    "episodes_per_cell": 2
+  },
+  "validation": {
+    "start_seed": 2000000,
+    "episodes_per_cell": 20
+  },
+  "final_holdout": {
+    "start_seed": 4000000,
+    "episodes_per_cell": 100
+  },
+  "cells": "5 scenarios x 4 directions",
+  "selection": "0.7 * overall validation success rate + 0.3 * worst direction validation success rate; ties resolved by overall rate, then successful recovery time",
+  "success": "50 consecutive control steps upright >0.95, abs roll/pitch <0.25 rad, abs actual joint angles <0.15 rad, abs targets <0.18 rad, root velocity norm <0.3 and foot-origin height within 0.02 m of standing reference",
+  "failure": "14-second timeout or any MuJoCo numerical warning; invalid trials are counted as failures, never silently dropped",
+  "domain_randomization": {
+    "mass_and_inertia_scale": [
+      0.9,
+      1.1
+    ],
+    "sliding_friction": [
+      0.35,
+      1.0
+    ],
+    "joint_damping_scale": [
+      0.7,
+      1.3
+    ],
+    "servo_gain_scale": [
+      0.75,
+      1.25
+    ],
+    "observation_noise_std_radians": [
+      0,
+      0.015
+    ],
+    "command_delay_control_steps": [
+      0,
+      2
+    ]
+  },
+  "limitations": [
+    "Friction ranges are provisional, not measured material properties",
+    "Servo torque/speed and PWM calibration are not measured",
+    "Battery alignment and uniform density inertia are approximations",
+    "Kick applies an upper-body horizontal pulse with neutral commands before recovery; this is not continuous policy-controlled play",
+    "Inverted pose direction label identifies the sampling stratum, not a unique physical fall direction",
+    "No firmware return-to-center mode switch is simulated",
+    "Finite tests cannot guarantee recovery from every physically possible pose"
+  ],
+  "additional_comparisons": {
+    "low_noise_v21": {
+      "seeds": [
+        11,
+        29
+      ],
+      "steps_each": 1000000,
+      "initial_log_std": -2
+    },
+    "scratch_long": {
+      "seeds": [
+        11,
+        29
+      ],
+      "additional_steps_each": 1600000,
+      "continues": "400k randomized scratch final"
+    }
+  },
+  "wide_angle_stress": {
+    "start_seed": 8000000,
+    "episodes_per_model": 300,
+    "kick_relative_direction_jitter_radians": 0.7853981634,
+    "lying_and_oblique_angle_offsets_radians": 1.0471975512,
+    "used_for_selection": false
+  }
+}
