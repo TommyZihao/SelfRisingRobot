@@ -1,0 +1,33 @@
+{
+  "version": "V3.1",
+  "selected_run": "ppo_scratch_long_seed11",
+  "selected_model_sha256": "34f4599acad1f2a5e1480ba7d2b1cb35b692765cbf7f32d07c1d9639aecf4e21",
+  "header_sha256": "fd6ca74101c071dfba7ec454921a0f0e71f15424b61b00328b3cb639785099a0",
+  "xml_sha256": "d34bfb2cd390349df86747cd58bbf6153e20e65abaef71c637ca8b0381c68bde",
+  "export_verification": {
+    "observations": 2000,
+    "max_absolute_raw_action_error": 1.9091430667472764e-06
+  },
+  "pwm_note": "Existing pulse/offset settings retained; angle mapping uses +/-90 lower, +/-120 upper. Physical calibration pending.",
+  "sketch": "robo03_atom_s3r_zihao_v3",
+  "servo_mapping": {
+    "servo1": {
+      "position": "lower",
+      "gpio": 1,
+      "limit_degrees": 90
+    },
+    "servo2": {
+      "position": "upper",
+      "gpio": 2,
+      "limit_degrees": 120
+    }
+  },
+  "control_mode": "continuous_policy_50Hz; DONE is status only; pause holds targets; no automatic center snap",
+  "validation": {
+    "native_control_logic": "passed: continuous beyond 14s, DONE retains inference, small tilt processed, stop/off persist, resume retains targets",
+    "nominal_simulation": "four directions, continuous 30 seconds each; stood in ~2 seconds; last 5 seconds maximum tilt ~0.03 degrees",
+    "real_world_continuous_response": "User reports V3.1 performs very well; no controlled physical success-rate measurement."
+  },
+  "training_xml_sha256": "74e78a3f2ce66f330eb0bb14000014bf3f44936df806344b55c5849cd0f378d4",
+  "xml_packaging_note": "Trailing whitespace normalized for Git; physics unchanged."
+}
