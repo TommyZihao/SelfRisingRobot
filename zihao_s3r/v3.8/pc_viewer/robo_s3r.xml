@@ -59,7 +59,7 @@
                   fullinertia="5.9498e-07 9.19754545455e-07 5.6102e-07 -2.15273636364e-16 1.62232727273e-08 7.62804545455e-17"/>
         <geom type="mesh" mesh="servo1" rgba="0.5 0.5 0.5 1"/>
         <geom name="servo1_collision" type="box" pos="0 -0.00028 0.00036"
-              size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0"/>  
+              size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0"/>
       </body>
 
 
@@ -67,24 +67,24 @@
         <!-- Lower servo: GPIO1, +/-90 degrees. -->
         <joint name="servo1_joint" range="-1.570796326795 1.570796326795" axis="1 0 0" pos="0.06070 -0.079 0.099606"
                damping="0.02" armature="0.0001"/>
-        <inertial pos="0.077944 -0.07521 0.12069" mass="0.011444" 
+        <inertial pos="0.077944 -0.07521 0.12069" mass="0.011444"
                 fullinertia="2.729019e-6 4.042083e-6 2.347159e-6 -1.3415e-8 -7.1469e-8 -5.00723e-7"/>
         <geom type="mesh" mesh="arm1" rgba="1 0.45 0.45 1"/>
         <geom name="arm1_collision" type="box" pos="0.00053 0.00003 0.00274"
               size="0.01366 0.02253 0.03257" contype="0" conaffinity="0" rgba="1 0.45 0.45 0"/>
 
         <body name="servo2" pos="0 0 0">
-          <inertial pos="0.07810 -0.076095 0.139111" mass="0.010" 
+          <inertial pos="0.07810 -0.076095 0.139111" mass="0.010"
                 fullinertia="9.19754545455e-07 5.9498e-07 5.6102e-07 2.15273636364e-16 -7.62804545455e-17 1.62232727273e-08"/>
           <geom type="mesh" mesh="servo2" rgba="0.5 0.5 0.5 1"/>
           <geom name="servo2_collision" type="box" pos="0 0.00028 0.00036"
-                size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0"/>  
+                size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0"/>
 
           <body name="arm2" pos="0 0 0">
             <!-- Upper servo: GPIO2, +/-120 degrees. -->
             <joint name="servo2_joint" range="-2.094395102393 2.094395102393" axis="0 1 0" pos="0.07810 -0.09640 0.144606"
                    damping="0.02" armature="0.0001"/>
-            <inertial pos="0.07810 -0.079112 0.189317" mass="0.021622" 
+            <inertial pos="0.07810 -0.079112 0.189317" mass="0.021622"
                     fullinertia="1.9417087e-5 1.7670681e-5 2.307976e-6 0 3.2e-11 -1.07968e-7"/>
             <geom type="mesh" mesh="arm2" rgba="1 0.45 0.45 1"/>
             <geom name="arm2_collision" type="box" pos="0 -0.00040 0.00975"

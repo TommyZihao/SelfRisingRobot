@@ -41,7 +41,7 @@
     "pc_viewer/live_robot_viewer.py": "c5df5f35986bac5afe0accee75ac224702451ea7131cf72db24961328ca61529",
     "pc_viewer/pc_mujoco_viewer.command": "676f784a5bfb874091e9ef05c1d8a0cb0211393faf6be0d8bc2e71996b5ee427",
     "pc_viewer/requirements.txt": "4a8a5edac00d55bbc7e6e53bdd5ddc067fc904d9daab3be1d060afa0ed8e80b2",
-    "pc_viewer/robo_s3r.xml": "74e78a3f2ce66f330eb0bb14000014bf3f44936df806344b55c5849cd0f378d4",
+    "pc_viewer/robo_s3r.xml": "d34bfb2cd390349df86747cd58bbf6153e20e65abaef71c637ca8b0381c68bde",
     "pc_viewer/setup_viewer.sh": "2eb24f39af970330fa1dba632b559244e8742cde13ba97b833c22f69b4265a31",
     "pc_viewer/viewer_theme.py": "8547a6d268df1d73f3ea92c6c67ec01dae4857576c59d07cfae2e39e27f8f2ee",
     "validation.json": "7671eaadd5960518a93fcb59e22689bec7a6bdcd2dc78daf00e8bef081bc3c94",
