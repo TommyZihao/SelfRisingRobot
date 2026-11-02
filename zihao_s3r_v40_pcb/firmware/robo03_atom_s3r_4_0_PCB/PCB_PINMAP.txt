@@ -1,0 +1,5 @@
+PCB adaptation 2026-11-02
+G1 + G39: lower servo, +/-90 deg
+G2 + G38: upper servo, +/-120 deg
+All outputs share the same computed pulse widths.
+5V is controller supply, never connect 7.4V here.
