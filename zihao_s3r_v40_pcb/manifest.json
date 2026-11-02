@@ -1,0 +1,22 @@
+{
+  "version": "4.0-PCB",
+  "author": "同济子豪兄 2026-10-26",
+  "update_date": "2026-11-02",
+  "sha256": {
+    "README.md": "1dac7dc60aaac7166cb5fc0b2562f58406fd9676d01397e7a9520c2279b20f1c",
+    "build/RoBoBo_4.0-PCB.merged.bin": "596d1691c34af3849b1c2f34c18827dc7152badc8eff602fccce221bdff56a2b",
+    "firmware/robo03_atom_s3r_4_0_PCB/v31_recovery_core.h": "6b02297edd4a5f3b46923e68c70cac8443ca213eeb2cd1d999e09fad7de5c0ac",
+    "firmware/robo03_atom_s3r_4_0_PCB/walk_config.h": "2192839d0bdf09c42c02d21c8e6eaf16f55a12a06bd260fc99c03e69e88b11b4",
+    "firmware/robo03_atom_s3r_4_0_PCB/policy_network.h": "f1e506d7dd59f7c97e320e811db7fd8321b010ba26db890a85a4a1dec6271b9e",
+    "firmware/robo03_atom_s3r_4_0_PCB/web_ui.h": "5888ca8fd5aa4c2f50e149244192d8f46b4c54c02e367de48e35f866a936598b",
+    "firmware/robo03_atom_s3r_4_0_PCB/web_ui.html": "66bfdd79868b58f054d3558a12694be1fd6fd90fa7544ba8d645f1077a64e87f",
+    "firmware/robo03_atom_s3r_4_0_PCB/roll_controller.h": "fecdfcd13a14ec7bc66e70c7e349bdf8b4dc6f8ab0fbed1a0a928b167327042d",
+    "firmware/robo03_atom_s3r_4_0_PCB/recovery_network.h": "cd52565823bf6c1200109f7d1ead7f752e4f14538144c9e5a52ec9da84843ad4",
+    "firmware/robo03_atom_s3r_4_0_PCB/PCB_PINMAP.txt": "81e323e6dbea852f995bdd6ba82eaf1cd35a89412a269c3f16823a8f45cd5674",
+    "firmware/robo03_atom_s3r_4_0_PCB/icon_assets.h": "e90d1df8a17a63a2db9485efc45df340686d0dcc8763e0ecb3db8ede3ba8ec9e",
+    "firmware/robo03_atom_s3r_4_0_PCB/control_modes.h": "1d8825652c81dd57b0c6efd187fdd075509de4597b987270fd3333cc33ceb918",
+    "firmware/robo03_atom_s3r_4_0_PCB/v32_motion.h": "04a51981ad09830077d0ae757a4c15fe02a98dd38ff633819d70d16e184d5820",
+    "firmware/robo03_atom_s3r_4_0_PCB/robo03_atom_s3r_4_0_PCB.ino": "354b0e5cf73ff9a7302dbf364cfc9da86715e10bf7bcca6bac615ecd86db3e48",
+    "firmware/robo03_atom_s3r_4_0_PCB/roll_gaits.h": "9762c92e12b95e9e46678d9d6ac386b9f934be1974769e8bfa3d0dd5f783856a"
+  }
+}
