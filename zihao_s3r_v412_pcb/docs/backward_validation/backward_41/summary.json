@@ -1,0 +1,11 @@
+{
+  "name": "backward_41",
+  "n": 30,
+  "success": 0.0,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.041770688520439817,
+  "mean_late_forward_m": 0.014069685619027333,
+  "mean_lower_span_deg": 32.924041161019154,
+  "mean_upper_span_deg": 134.09521487501408
+}

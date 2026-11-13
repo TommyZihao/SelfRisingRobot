@@ -46,3 +46,7 @@ https://homemadegarbage.com/rl13
 - `policy_network.h`
 
 `policy_network.h` は学習済みポリシーをCヘッダ化したもので、M5Atom上で起き上がり動作を実行するために使います。
+
+## RoBoBo ATOM S3R 4.1.2-PCB
+
+[同济子豪兄的4.1.2固件、模型、实验报告与视频](zihao_s3r_v412_pcb/README.md)：优化右侧翻和大幅前进/后退，包含电脑端MuJoCo姿态查看器。仿真结果与真机验证范围详见说明。

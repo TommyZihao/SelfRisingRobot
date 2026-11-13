@@ -1,0 +1,12 @@
+{
+  "recovery_network": 4.172325134277344e-07,
+  "legacy_network": 6.258487701416016e-07,
+  "roll_network": 1.1324882507324219e-06,
+  "right_network": 6.556510925292969e-07,
+  "roll_left_switching": 2.076534104666905e-07,
+  "roll_right_switching": 2.337865842250153e-06,
+  "forward": 1.4104836809636367e-07,
+  "backward": 1.4966558481432912e-07,
+  "yaw_left": 8.256411780926953e-07,
+  "yaw_right": 5.682129117778878e-07
+}

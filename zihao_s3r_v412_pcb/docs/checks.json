@@ -1,0 +1,5 @@
+{
+  "env_checker": true,
+  "mirror_export_exact": true,
+  "forward_slew_limits": true
+}

@@ -1,0 +1,11 @@
+{
+  "name": "backward_heading_2701",
+  "n": 30,
+  "success": 0.7333333333333333,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.2282255943236121,
+  "mean_late_forward_m": 0.09697410644501744,
+  "mean_lower_span_deg": 119.49851459506253,
+  "mean_upper_span_deg": 124.82486335824105
+}

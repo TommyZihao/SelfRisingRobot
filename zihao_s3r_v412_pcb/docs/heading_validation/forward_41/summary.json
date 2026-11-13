@@ -1,0 +1,11 @@
+{
+  "name": "forward_41",
+  "n": 30,
+  "success": 0.2,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.03243814310975587,
+  "mean_late_forward_m": 0.023236345946556547,
+  "mean_lower_span_deg": 34.33998248801425,
+  "mean_upper_span_deg": 47.76596430803441
+}

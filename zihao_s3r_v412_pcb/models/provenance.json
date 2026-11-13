@@ -1,0 +1,22 @@
+{
+  "author": "同济子豪兄 2026-10-26",
+  "right_roll.zip": {
+    "source": "walk_v412/runs/right_mirror_2101/final.zip",
+    "initialization": "mirror of warm_1101 followed by PPO",
+    "steps": 800768
+  },
+  "forward_gait.json": {
+    "source": "forward_heading_2502",
+    "method": "CEM periodic targets + heading feedback; no PPO network"
+  },
+  "backward_gait.json": {
+    "source": "backward_heading_2701",
+    "method": "CEM periodic targets + heading feedback; no PPO network"
+  },
+  "preserved": [
+    "recovery_ppo.zip",
+    "legacy_walk.zip",
+    "continuous_roll.zip"
+  ],
+  "forward_gait_search32.json": "old 4.1 baseline only, not active"
+}

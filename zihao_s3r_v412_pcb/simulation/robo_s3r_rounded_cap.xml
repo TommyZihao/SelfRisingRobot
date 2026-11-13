@@ -1,0 +1,88 @@
+<mujoco model="RoBoBo_Walk_Rubber_5V">
+  <!-- 作者：同济子豪兄 2026-10-26 | RoBoBo 4.1-PCB; original robot: HomeMadeGarbage --><compiler angle="radian" meshdir="assets" autolimits="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" integrator="implicitfast" />
+  <asset>
+    <mesh name="ATOM" file="ATOM.stl" />
+    <mesh name="foot" file="foot.stl" />
+    <mesh name="servo1" file="servo1.stl" />
+    <mesh name="arm1" file="arm1.stl" />
+    <mesh name="servo2" file="servo2.stl" />
+    <mesh name="arm2" file="arm2.stl" />
+    <mesh name="shaft" file="shaft.obj" />
+    <mesh name="rubber_tip" file="rubber_tip.obj" />
+    <texture name="blue_grid" type="2d" builtin="checker" rgb1=".10 .19 .28" rgb2=".19 .31 .42" mark="edge" markrgb=".55 .70 .80" width="512" height="512" />
+    <material name="blue_floor" texture="blue_grid" texrepeat="10 10" texuniform="true" reflectance=".08" specular=".3" shininess=".3" />
+    <texture name="sky" type="skybox" builtin="gradient" rgb1=".25 .38 .52" rgb2=".04 .07 .12" width="512" height="3072" />
+  </asset>
+  <default>
+    <joint type="hinge" limited="true" range="-1.57079632679 1.57079632679" />
+    <position ctrllimited="true" ctrlrange="-1.57079632679 1.57079632679" forcelimited="true" forcerange="-1.0 1.0" kp="0.5" kv="0.04" />
+  </default>
+  <worldbody>
+    <light name="light1" pos="1 0 0" dir="0 0 -1" directional="true" />
+    <camera name="front" pos="0.22 -0.45 0.20" xyaxes="1 0 0 0 0.35 1" />
+    <body name="foot" pos="0 0 0.0">
+      <joint type="free" />
+      <inertial pos="0.079759 -0.079713 0.078911" mass="0.017628" fullinertia="7.818e-6 5.908792e-6 1.1153122e-5 -4.3788e-8 -4.37317e-7 1.1931e-8" />
+      <geom type="mesh" mesh="foot" rgba="1 0.45 0.45 1" name="robot_contact_0" />
+      <geom name="foot_collision" type="box" pos="0.00829 0.00365 -0.00155" size="0.02131 0.03100 0.03748" contype="0" conaffinity="0" rgba="1 0.45 0.45 0" />
+      <body name="ATOM" pos="0 0 0">
+        <inertial pos="0.07810 -0.10035 0.084206" mass="0.008" diaginertia="4.966148571e-7 4.966148571e-7 7.319634286e-7" />
+        <geom type="mesh" mesh="ATOM" rgba="1 1 1 1" name="robot_contact_2" />
+        <geom name="atom_collision" type="box" pos="0 0 0" size="0.00700 0.01180 0.01180" contype="0" conaffinity="0" rgba="1 1 1 0" />
+      </body>
+      <body name="battery" pos="0.07810 -0.05535 0.082206">
+        <inertial pos="0 0 0" mass="0.025" diaginertia="2.083333333e-6 3.541666667e-6 5.208333333e-6" />
+        <geom name="battery_collision" type="box" size="0.020 0.015 0.005" rgba="0.1 0.3 0.9 1" />
+      </body>
+      <body name="servo1" pos="0 0 0">
+        <inertial pos="0.081005 -0.079 0.094111" mass="0.010" fullinertia="5.9498e-07 9.19754545455e-07 5.6102e-07 -2.15273636364e-16 1.62232727273e-08 7.62804545455e-17" />
+        <geom type="mesh" mesh="servo1" rgba="0.5 0.5 0.5 1" name="robot_contact_5" />
+        <geom name="servo1_collision" type="box" pos="0 -0.00028 0.00036" size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0" />
+      </body>
+      <body name="arm1" pos="0 0 0">
+        <joint name="servo1_joint" range="-1.570796326795 1.570796326795" axis="1 0 0" pos="0.06070 -0.079 0.099606" damping="0.02" armature="0.0001" />
+        <inertial pos="0.077944 -0.07521 0.12069" mass="0.011444" fullinertia="2.729019e-6 4.042083e-6 2.347159e-6 -1.3415e-8 -7.1469e-8 -5.00723e-7" />
+        <geom type="mesh" mesh="arm1" rgba="1 0.45 0.45 1" name="robot_contact_7" />
+        <geom name="arm1_collision" type="box" pos="0.00053 0.00003 0.00274" size="0.01366 0.02253 0.03257" contype="0" conaffinity="0" rgba="1 0.45 0.45 0" />
+        <body name="servo2" pos="0 0 0">
+          <inertial pos="0.07810 -0.076095 0.139111" mass="0.010" fullinertia="9.19754545455e-07 5.9498e-07 5.6102e-07 2.15273636364e-16 -7.62804545455e-17 1.62232727273e-08" />
+          <geom type="mesh" mesh="servo2" rgba="0.5 0.5 0.5 1" name="robot_contact_9" />
+          <geom name="servo2_collision" type="box" pos="0 0.00028 0.00036" size="0.00600 0.01570 0.01670" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 0" />
+          <body name="arm2" pos="0 0 0">
+            <joint name="servo2_joint" range="-2.094395102393 2.094395102393" axis="0 1 0" pos="0.07810 -0.09640 0.144606" damping="0.02" armature="0.0001" />
+            <inertial pos="0.07810 -0.079112 0.189317" mass="0.021622" fullinertia="1.9417087e-5 1.7670681e-5 2.307976e-6 0 3.2e-11 -1.07968e-7" />
+            <geom type="mesh" mesh="arm2" rgba="1 0.45 0.45 1" contype="0" conaffinity="0" />
+            <geom name="arm2_collision" type="box" pos="0 -0.00040 0.00975" size="0.00625 0.02250 0.05202" contype="0" conaffinity="0" rgba="1 0.45 0.45 0" />
+            <geom name="shaft_contact" type="mesh" mesh="shaft" rgba="0 0 0 0" group="3" />
+            <geom name="rubber_tip_contact" type="mesh" mesh="rubber_tip" rgba=".12 .14 .17 1" group="0" priority="1" friction=".85 .003 .0001" solref=".012 1" solimp=".8 .95 .001" />
+            <body name="added_pad" pos="0.0781 -0.079 0.241">
+              <geom name="added_pad" type="ellipsoid" size="0.009 0.012 0.008" mass="0.002" rgba=".1 .14 .2 1" />
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <geom name="ground_collision" type="plane" size="5 5 0.1" pos="0 0 0" rgba="0.0 0.5 0.0 0" />
+    <geom name="ground_visual" type="plane" size="5 5 0.1" pos="0 0 -.0001" contype="0" conaffinity="0" rgba="1 1 1 1" material="blue_floor" />
+  </worldbody>
+  <actuator>
+    <position name="servo1_pos" joint="servo1_joint" ctrlrange="-1.570796326795 1.570796326795" />
+    <position name="servo2_pos" joint="servo2_joint" ctrlrange="-2.094395102393 2.094395102393" />
+  </actuator>
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <headlight ambient=".35 .35 .35" diffuse=".65 .65 .65" specular=".2 .2 .2" />
+  </visual>
+  <contact>
+    <pair name="floor_robot_contact_0" geom1="robot_contact_0" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_robot_contact_2" geom1="robot_contact_2" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_battery_collision" geom1="battery_collision" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_robot_contact_5" geom1="robot_contact_5" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_robot_contact_7" geom1="robot_contact_7" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_robot_contact_9" geom1="robot_contact_9" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_shaft_contact" geom1="shaft_contact" geom2="ground_collision" condim="3" friction=".22 .22 .003 .0001 .0001" solref=".008 1" solimp=".9 .95 .001" />
+    <pair name="floor_rubber_tip_contact" geom1="rubber_tip_contact" geom2="ground_collision" condim="3" friction=".85 .85 .003 .0001 .0001" solref=".012 1" solimp=".8 .95 .001" />
+    <pair name="floor_added_pad" geom1="added_pad" geom2="ground_collision" condim="3" friction=".8 .8 .003 .0001 .0001" solref=".012 1" />
+  </contact>
+</mujoco>

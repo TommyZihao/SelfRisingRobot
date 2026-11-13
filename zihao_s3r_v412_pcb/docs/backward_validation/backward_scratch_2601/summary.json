@@ -1,0 +1,11 @@
+{
+  "name": "backward_scratch_2601",
+  "n": 30,
+  "success": 0.0,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.048235860542235644,
+  "mean_late_forward_m": 0.005485263483537974,
+  "mean_lower_span_deg": 34.90818964805752,
+  "mean_upper_span_deg": 0.0
+}

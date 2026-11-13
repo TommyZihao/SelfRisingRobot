@@ -1,0 +1,11 @@
+{
+  "name": "forward_heading_2501",
+  "n": 30,
+  "success": 0.0,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.31025959798752967,
+  "mean_late_forward_m": 0.14184320020187405,
+  "mean_lower_span_deg": 114.68746274108335,
+  "mean_upper_span_deg": 115.88301917390355
+}

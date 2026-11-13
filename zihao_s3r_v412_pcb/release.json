@@ -1,0 +1,41 @@
+{
+  "version": "4.1.2-PCB",
+  "author": "同济子豪兄 2026-10-26",
+  "packaged": "2026-11-13",
+  "flashed": true,
+  "published": true,
+  "walk": {
+    "forward": "forward_heading_2502 CEM sine + heading feedback",
+    "backward": "backward_heading_2701 CEM sine + heading feedback",
+    "roll_left": "warm_1101",
+    "roll_right": "right_mirror_2101 mirrored initialization + PPO",
+    "yaw_left": "legacy multipose_conservative + legacy gait",
+    "yaw_right": "legacy multipose_conservative + legacy gait",
+    "home": "deterministic 0.012 rad per 20ms slew to zero"
+  },
+  "pins": {
+    "lower": [
+      1,
+      39
+    ],
+    "upper": [
+      2,
+      38
+    ]
+  },
+  "limits_deg": [
+    90,
+    120
+  ],
+  "pose_telemetry_hz": 200,
+  "test_start": "pitch_neg",
+  "physics": "5V approximation; rounded rubber cap; carpet proxy",
+  "limitations": [
+    "Simulation only; 5V, rounded-cap and carpet parameters are not calibrated",
+    "Only pitch_neg initial pose evaluated",
+    "Right roll first quarter turn improved; continuous multiple rolls still not reliable",
+    "Left roll and yaw unchanged; no claim of improved yaw"
+  ],
+  "revision": "large-motion-forward-backward-and-right-roll",
+  "hardware_motion_performance_tested": false
+}

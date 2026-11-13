@@ -1,0 +1,11 @@
+{
+  "name": "forward_warm_2202",
+  "n": 20,
+  "success": 0.0,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.024431097774962236,
+  "mean_late_forward_m": 0.0070072594364726125,
+  "mean_lower_span_deg": 17.331129737806148,
+  "mean_upper_span_deg": 6.8022123395119864
+}

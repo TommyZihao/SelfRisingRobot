@@ -1,0 +1,11 @@
+{
+  "name": "forward_sin_grip_2402",
+  "n": 100,
+  "success": 0.15,
+  "stood": 0.0,
+  "invalid": 0,
+  "mean_forward_m": 0.2117031734441806,
+  "mean_late_forward_m": 0.10289007421159642,
+  "mean_lower_span_deg": 100.7816466715545,
+  "mean_upper_span_deg": 77.77370282308847
+}

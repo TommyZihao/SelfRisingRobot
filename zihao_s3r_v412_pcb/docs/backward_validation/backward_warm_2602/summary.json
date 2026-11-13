@@ -1,0 +1,11 @@
+{
+  "name": "backward_warm_2602",
+  "n": 30,
+  "success": 0.0,
+  "stood": 0.13333333333333333,
+  "invalid": 0,
+  "mean_forward_m": 0.06743054530828255,
+  "mean_late_forward_m": 0.0011407715867408068,
+  "mean_lower_span_deg": 81.91466513929373,
+  "mean_upper_span_deg": 35.269614003278285
+}

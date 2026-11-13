@@ -1,0 +1,11 @@
+{
+  "version": "4.1.2-PCB",
+  "date": "2026-11-13",
+  "port": "/dev/cu.usbmodem1101",
+  "chip": "ESP32-S3-PICO-1",
+  "flash_verified": true,
+  "serial_query_responded": true,
+  "observed_state": "rising",
+  "motion_performance_tested": false,
+  "firmware_sha256": "a8291c87ce8d808538e26b9c139678a83c424da0bde3ef0780b46a61d024d50d"
+}
